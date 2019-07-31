@@ -1,6 +1,7 @@
 import tweepy
 import schedule
 import time
+import os
 
 print('this is my twitter bot')
 def get_auth_key():
@@ -34,7 +35,7 @@ def quotes_of_day():
     print("Read the line from the file")
     api.update_status(line+" #morningvibes #morningquotes")
     print("status update is done!")
-
+os.environ['TZ'] = 'Asia/Kolkata'
 schedule.every().day.at("09:00").do(quotes_of_day)
 print("schdeduled")
 
