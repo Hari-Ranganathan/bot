@@ -5,10 +5,10 @@ import os
 
 print('this is my twitter bot')
 def get_auth_key():
-    CONSUMER_KEY = ''
-    CONSUMER_SECRET =''
-    ACCESS_KEY = ''
-    ACCESS_SECRET = ''
+    CONSUMER_KEY = 'bYAfLbk9SG4F7MYOOUt5nkaRP'
+    CONSUMER_SECRET ='QuH4NkDGTayxuipGrv2Avz8mNGEeucaqJE2MjGjpVK3Ql2xfRk'
+    ACCESS_KEY = '1152952023936933888-XqXOZ3ytt3SyKiljfIf07lSgmlAgt7'
+    ACCESS_SECRET = 'Aqvysd7ajtrEIs7iBqbF7ULPwF9UyCCOCSlONQyflAO0s'
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
