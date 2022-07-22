@@ -25,10 +25,10 @@ def get_hashtag():
     return hashtag
 
 def get_auth_key():
-    CONSUMER_KEY = 'bYAfLbk9SG4F7MYOOUt5nkaRP'
-    CONSUMER_SECRET ='QuH4NkDGTayxuipGrv2Avz8mNGEeucaqJE2MjGjpVK3Ql2xfRk'
-    ACCESS_KEY = '1152952023936933888-XqXOZ3ytt3SyKiljfIf07lSgmlAgt7'
-    ACCESS_SECRET = 'Aqvysd7ajtrEIs7iBqbF7ULPwF9UyCCOCSlONQyflAO0s'
+    CONSUMER_KEY = ''
+    CONSUMER_SECRET =''
+    ACCESS_KEY = ''
+    ACCESS_SECRET = ''
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
     auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
@@ -46,8 +46,8 @@ def quotes_of_day():
     print("status update is done!")
 
 def send_message(status:int,reason:str):
-    twilio_sid='ACd5391845b3e18d7708375f6bb1729964'
-    auth_token='9f3015548802ca4baa4db6a54c444e03'
+    twilio_sid=''
+    auth_token=''
 
     whatsapp_client = Client(twilio_sid,auth_token)
 
